@@ -27,6 +27,5 @@ public class AgeGroups {
         else {
             System.out.println("-1");
         }
-
     }
 }
