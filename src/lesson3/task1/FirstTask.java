@@ -2,6 +2,12 @@ package lesson3.task1;
 
 import java.util.Scanner;
 
+/**
+ * Создать программу, которая позволяет ввести с
+ * клавиатуры массив размером n и отсортировать его по
+ * убыванию.
+ */
+
 public class FirstTask {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
