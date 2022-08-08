@@ -14,7 +14,6 @@ public class FirstTask {
         System.out.print("Enter array size: ");
         int arraySize = scanner.nextInt();
         int[] array = new int[arraySize];
-        //System.out.println("Enter element");
         for (int i = 0; i < array.length; i++){
             System.out.print("Enter element " + (i+1) + ": ");
             array[i] = scanner.nextInt();
