@@ -16,7 +16,7 @@ public class FirstTask {
         int[] array = new int[arraySize];
         //System.out.println("Enter element");
         for (int i = 0; i < array.length; i++){
-            System.out.print("Enter element " + (i+1));
+            System.out.print("Enter element " + (i+1) + ": ");
             array[i] = scanner.nextInt();
         }
         System.out.println("Your base massive is:");
