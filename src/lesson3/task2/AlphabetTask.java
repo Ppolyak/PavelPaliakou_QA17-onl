@@ -2,6 +2,12 @@ package lesson3.task2;
 
 import java.util.Scanner;
 
+/**
+ * Постройте частотный словарь букв русского (или английского) алфавита.
+ * Т.е. Сколько раз каждая бука алфавита повторяется в введенной строке.
+ * Alphabet.put(“A”, 0)
+ */
+
 public class AlphabetTask {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
