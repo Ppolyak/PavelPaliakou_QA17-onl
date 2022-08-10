@@ -3,18 +3,18 @@ package lesson3.task2;
 import java.util.Scanner;
 
 /**
- * Постройте частотный словарь букв русского (или английского) алфавита.
- * Т.е. Сколько раз каждая бука алфавита повторяется в введенной строке.
- * Alphabet.put(“A”, 0)
+ * РџРѕСЃС‚СЂРѕР№С‚Рµ С‡Р°СЃС‚РѕС‚РЅС‹Р№ СЃР»РѕРІР°СЂСЊ Р±СѓРєРІ СЂСѓСЃСЃРєРѕРіРѕ (РёР»Рё Р°РЅРіР»РёР№СЃРєРѕРіРѕ) Р°Р»С„Р°РІРёС‚Р°.
+ * Рў.Рµ. РЎРєРѕР»СЊРєРѕ СЂР°Р· РєР°Р¶РґР°СЏ Р±СѓРєР° Р°Р»С„Р°РІРёС‚Р° РїРѕРІС‚РѕСЂСЏРµС‚СЃСЏ РІ РІРІРµРґРµРЅРЅРѕР№ СЃС‚СЂРѕРєРµ.
+ * Alphabet.put(вЂњAвЂќ, 0)
  */
 
 public class AlphabetTask {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter list");
+        System.out.print("Enter list ");
         String alpha = scanner.next();
-        char[] rus_symbols = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п',
-                'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'};
+        char[] rus_symbols = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
+                'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
         int[] count = new int[rus_symbols.length];
 
@@ -25,10 +25,10 @@ public class AlphabetTask {
                 }
             }
         }
-//?
+
         for (int i = 0; i < count.length; i++){
             if (count[i] >= 0){
-                System.out.println(rus_symbols[i] + " - " +  count[i] + " раз" + ((count[i] > 1 && count[i] < 5) ? "а" : "" ));
+                System.out.println(rus_symbols[i] + " в†’ " +  count[i]);
             }
         }
     }

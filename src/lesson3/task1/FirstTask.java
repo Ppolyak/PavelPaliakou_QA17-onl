@@ -11,11 +11,11 @@ import java.util.Scanner;
 public class FirstTask {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter array size: ");
+        System.out.print("Enter array size: → ");
         int arraySize = scanner.nextInt();
         int[] array = new int[arraySize];
         for (int i = 0; i < array.length; i++){
-            System.out.print("Enter element " + (i+1) + ": ");
+            System.out.print("Enter element " + (i) + ": ");
             array[i] = scanner.nextInt();
         }
         System.out.println("Your base massive is:");
@@ -37,9 +37,11 @@ public class FirstTask {
             }
         }
         System.out.println("Sorted massive DESC:");
+        System.out.print("[");
         for (int i = 0; i < arraySize - 1; i++){
             System.out.print(array[i] + ", ");
         }
         System.out.print(array[arraySize - 1]);
+        System.out.print("]");
     }
 }
