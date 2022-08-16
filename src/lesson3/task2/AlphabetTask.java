@@ -27,9 +27,7 @@ public class AlphabetTask {
         }
 
         for (int i = 0; i < count.length; i++){
-            if (count[i] >= 0){
                 System.out.println(rus_symbols[i] + " → " +  count[i]);
-            }
         }
     }
 }
