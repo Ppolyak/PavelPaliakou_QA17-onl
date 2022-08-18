@@ -21,7 +21,7 @@ public class DvumerMasZv {
 
         for (int i = 0; i < matrix.length; i++){
             for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = random.nextInt(3,5);
+                matrix[i][j] = random.nextInt(2,5);
             }
         }
 
@@ -148,17 +148,23 @@ public class DvumerMasZv {
                     System.out.print(matrix[i][j] + "  ");
                 }
             }
-        }
-        a = min / 2;
-        b = min / 2;
-        for (int i = a; i < a + 1; i++) {
-            for (int j = b; j < b + 1; j++) {
-                centerCoordinatesValue = matrix[i][j];
+            int c = min / 2;
+            int d = min / 2;
+            if (min % 2 == 0 ) {
                 System.out.println();
-                System.out.print("Координаты центра " + i);
-                System.out.println(" " + j);
+                System.out.println("Центр у полученной матрицы выявить нельзя");
             }
-            System.out.println("Значение центра " + centerCoordinatesValue);
+            else {
+                for (int i = c; i < c + 1; i++) {
+                    for (int j = d; j < d + 1; j++) {
+                        centerCoordinatesValue = matrix[i][j];
+                        System.out.println();
+                        System.out.print("Координаты центра " + i);
+                        System.out.println(" " + j);
+                    }
+                    System.out.println("Значение центра " + centerCoordinatesValue);
+                }
+            }
         }
     }
 }
