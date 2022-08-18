@@ -31,7 +31,6 @@ public class DvumerMasZv {
         center(matrix);
         obrezMatrici(matrix);
         obrezEsliNeKv(matrix);
-
 //        int maxValue = 0;
 //        for (int i = 0; i < arrayishe.length; i++) {
 //            for (int j = 0; j < arrayishe[i].length; j++) {
