@@ -23,7 +23,7 @@ public class PassengerTransport extends GroundTransport {
         System.out.print("Enter time (in hours) ");
         int time = scanner.nextInt();
         distance = time * maxSpeed;
-        toplivoYshlo = (consumption * distance) / 100;
+        cons();
         System.out.println("For time " + time + "h, " + "vehicle " + brand +  " moving at maximum speed " +
                 maxSpeed + " km/h " + " travel " + distance + " km and consume "  + toplivoYshlo +
                 " liters of fuel");
